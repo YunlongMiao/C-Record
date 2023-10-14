@@ -1,0 +1,24 @@
+<!doctype html>    
+<html>
+     <head>
+	<meta charset="utf-8">
+	<title>getElementsByTagName方法</title>
+	<script> 
+		 window.onload=function()
+		 {
+			var myDocuments=document.getElementsByTagName("body");
+			var myBody=myDocumentElements.item(0);
+			var myBodyElements=myBody.getElementsByTagName("P");
+			var myP=myBodyElements.item(1);
+			var myDisp=document.getElementById("disp");
+			 myDisp.innerHTML="显示的第二个p元素的内容是:"
+				+myP.firstChild.nodeValue;
+		 }
+		</script>
+	</head>
+   <body>
+	<p>hello</p>
+	<p>world</p>
+	<div id="disp"></div>
+  </body>
+</html> 

@@ -1,0 +1,38 @@
+<!doctype html>
+   <html>
+     <head>
+	<meta charset="utf-8">
+	<title>绝对定位</title>
+	<style>
+	#box {
+		height :200px;
+		width :300px;
+		margin:0 auto;
+		background :grey;
+		position:relative;
+		}
+	#box p{
+		text-align:center;
+		border:5px solid blue;
+		width :100px;
+		margin:15px;
+		background :pink;
+		}
+	#box p.absolute{
+		background :yellow;
+		position:absolute;
+		top:10px;
+		left:40px;
+		
+		}
+	</style>
+  </head> 
+ <body>
+	<div id="box">
+	 <p>第一段文字</p>
+	  <p class="absolute"> 第二段文字</p>
+	   <p>第三段文字</p>
+	   </div>
+	</body>
+</html>
+	  

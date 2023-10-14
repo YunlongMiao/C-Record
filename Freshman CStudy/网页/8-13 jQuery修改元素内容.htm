@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+   <head>
+	<meta charset="utf-8">
+	<title>jQuery修改元素内容</title>
+	<script src="jsjian.js"></script>
+	<script>
+		$(docyment).ready(function() {
+			$("button").click(function(){
+			var newContent=$("#userInput").val();
+				$("ul li:first").html(newContent);
+				$("ul li:last").text(newContent);
+			});
+		});
+		</script>
+		  </head>
+		  <body>
+			<input type="text" id="userInput">
+			<button>修改HTML内容</button>
+			<ul>
+				<li>足球</li>
+				<li>音乐</li>
+				<li>羽毛球</li>
+				<li>足球</li>
+			</ul>
+		  </body>
+		 </html>     
+				

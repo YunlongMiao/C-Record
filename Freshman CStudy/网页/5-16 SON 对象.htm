@@ -1,0 +1,36 @@
+<!doctype html>    
+<html>
+     <head>
+	<meta charset="utf-8">
+	<title>SON对象</title>
+	<script> 
+		 window.onload=function()
+		 {
+			var student={
+				studentId:"2056005889",
+				username:"小明",
+				tel:{home:588614,mobile:15944521486},
+				address:
+						[
+							{city:"武汉",postcode:"420052"},
+							{city:"宜昌",postcode:"4380052"}
+						],
+						show:function(){
+								document.write("学号："+this.studentId+"<br/>");
+								document.write("姓名："+this.username+"<br/>");
+								document.write("宅电："+this.tel.home+"<br/>");
+								document.write("手机："+this.tel.mobile +"<br/>");
+								document.write("工作城市："+this.address[0].city +",邮编")
+								document.write(this.address[0].postcode+"<br/>");
+								document.write("家庭城市:"this.address[1].city)
+								document.write(",邮编："+this.address[1].postcode+"<br/>");
+								
+							}
+			};
+			student.show();
+		}	
+		</script>
+	</head>
+   <body>
+  </body>
+</html> 

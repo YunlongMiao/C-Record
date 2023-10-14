@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "malloc.h": "c"
+    },
+    "KeilAssistant.Project.ExcludeList": [
+    
+        "template.uvproj",
+        "template.uvprojx"
+    ],
+    "C_Cpp.errorSquiggles": "Disabled"
+}

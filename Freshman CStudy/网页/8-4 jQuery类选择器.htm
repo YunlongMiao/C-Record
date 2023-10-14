@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <head>
+	<meta charset="utf-8">
+	<title>jQuery类选择器</title>
+	<script src="jsjian.js"></script><!--引入jQuery库-->
+	<script>
+	    $(docyment).ready(function() {
+			$("button").click(function(){
+				$(".myClass").each(function(index,element){
+					$(this).html(index+"-"+$(this).text())
+				});
+			});
+		});
+		  </script>
+		  </head>
+		  <body>
+			<button>增加每个列表项的索引值</button>
+			<ul>
+				<li class="myClass">足球</li>
+				<li class="myClass">羽毛球</li>
+				<li class="myClass">篮球</li>
+			</ul>
+		  </body>
+		  </html>
